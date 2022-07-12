@@ -1,0 +1,6 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+a{ text-decoration: none; }
+
+.header_menu{ display: grid; grid-template-columns: 45% 55%; background-color: lightblue; padding: 12px;}
+.header_menu a { color: #fff; }
+.menu{ display: grid; grid-template-columns: repeat(4, 1fr); }

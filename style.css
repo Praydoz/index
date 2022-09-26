@@ -1,9 +1,20 @@
-*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Mulish', sans-serif;}
+*{ 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+	font-family: 'Mulish', sans-serif;
+	--negro_claro: #111111;
+	--negro_oscuro: #0a0a0a;
+	--gris: #A1B0BF;
+	--azul_oscuro: #0885f9;
+	--azul_claro: #3aa1ff;
+	--blanco: #ffffff;
+}
 
 a{ text-decoration: none; }
 
 .main_head{ 
-	background-color: #000; 
+	background-color: #0a0a0a; 
 	display: grid;
 	padding: 10px;
 	grid-template-columns: repeat(2, 1fr);
@@ -26,24 +37,53 @@ a{ text-decoration: none; }
 	background-color: #0a0a0a;
 }
 
-.servicios, .planes{
+.servicios, .planes, .articulos{
 	display: grid;
 	grid-template-rows: 1fr;
 	grid-gap: 10px;
+	color: #fff;
 }
 
-.planes_cards, .servicios_cards{
+.planes_cards, .servicios_cards, .articulos_cards{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
 }
 
-.servicios{
-	
+.planes, .articulos{
+	background-color: #111111;
 }
+
+.planes_descripcion, .servicios_descripcion, .articulos_descripcion{
+	text-align: center;
+	padding: 50px;
+}
+
+.planes_cards_list{
+	list-style-type: '\2713';
+	margin-left: 20px;
+}
+
+.planes_cards_card, .articulos_cards_card, .servicios_cards_card{ 
+	/*border: 1px solid blue; */
+	margin: 30px; 
+	padding: 40px;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-gap: 10px;
+	justify-items: start;
+	border-radius: 25px;
+	background-color: #000;
+}
+
+.servicios{	background-color: #0a0a0a; }
+.servicios_cards_card{ background-color: #111111; }
+.servicios_cards_card, .articulos_cards_card { justify-items: start; text-align: justify; }
+.web-icon{ background-color: var(--azul_oscuro); padding: 20px; border-radius: 50%; font-size: 25px;}
 
 
 .foot{
-	background-color: #111;
+	background-color: #0a0a0a;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 5px;
@@ -60,6 +100,4 @@ a{ text-decoration: none; }
 	align-items: center;
 }
 
-.social-icon{
-	font-size: 20px;
-}
+.social-icon{	font-size: 20px; }

@@ -2,7 +2,7 @@
 	margin: 0; 
 	padding: 0; 
 	box-sizing: border-box; 
-	font-family: 'Mulish', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	--negro_claro: #111111;
 	--negro_oscuro: #0a0a0a;
 	--gris: #A1B0BF;
@@ -35,6 +35,7 @@ a{ text-decoration: none; }
 	display: grid;
 	grid-template-columns: 50% 50%;
 	background-color: #0a0a0a;
+	padding: 50px;
 }
 
 .servicios, .planes, .articulos{
@@ -57,6 +58,9 @@ a{ text-decoration: none; }
 .planes_descripcion, .servicios_descripcion, .articulos_descripcion{
 	text-align: center;
 	padding: 50px;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-gap: 10px;
 }
 
 .planes_cards_list{
@@ -65,9 +69,9 @@ a{ text-decoration: none; }
 }
 
 .planes_cards_card, .articulos_cards_card, .servicios_cards_card{ 
-	/*border: 1px solid blue; */
+	/*width: 364px; solo planes*/
 	margin: 30px; 
-	padding: 40px;
+	padding: 25px;
 	display: grid;
 	grid-template-rows: 1fr;
 	grid-gap: 10px;
@@ -76,11 +80,21 @@ a{ text-decoration: none; }
 	background-color: #000;
 }
 
+.planes_cards_card{ height: 405px; width: 365px; }
+
+.planes_cards_card h2{ 
+	color: var(--azul_oscuro); 
+	font-weight: bold; 
+	font-size: 30px;
+}
+
 .servicios{	background-color: #0a0a0a; }
 .servicios_cards_card{ background-color: #111111; }
 .servicios_cards_card, .articulos_cards_card { justify-items: start; text-align: justify; }
 .web-icon{ background-color: var(--azul_oscuro); padding: 20px; border-radius: 50%; font-size: 25px;}
 
+
+.articulos_imagen{ width: 100%; }
 
 .foot{
 	background-color: #0a0a0a;
@@ -100,4 +114,4 @@ a{ text-decoration: none; }
 	align-items: center;
 }
 
-.social-icon{	font-size: 20px; }
+.social-icon{ font-size: 20px; }

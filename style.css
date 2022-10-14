@@ -129,6 +129,7 @@ a{ text-decoration: none; }
 	
 	.servicios_cards_card, .articulos_cards_card{ width: 75%; margin-bottom: 10px; }
 	.planes_cards_card{ margin-bottom: 10px; }
+	.planes_cards_card_last{ margin-bottom: none; }
 
 	.foot{ display: block;}
 	.social-icon { font-size: 25px; }
